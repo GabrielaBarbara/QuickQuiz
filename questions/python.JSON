@@ -1,0 +1,15 @@
+{"questions": [
+    { "T": "python", "S": "listcomprehension", "Q": "How to list all the files in a directory?", "A":" [f[2] for f in os.walk(directory) if len(f[2] > 0)]" },
+    { "T": "python", "S": "lists", "Q": "How to concatenate two lists in Python?", "A":"from itertools import chain\nc = list(itertools.chain(a,b))" }, 
+    { "T": "python", "S": "dictionary", "Q": "How to sort a Python dict by value", "A":"sorted(myDic.items(), key=lambda x: x[1])\nor\nimport operator\nsorted(xs.items(), key=operator.itemgetter(1))" },
+    { "T": "python", "S": "time", "Q": "How to obtain the unix epoch time value?", "A":"import time\nepoch_time = int(time.time())" }
+    { "T": "python", "S": "lists", "Q": "How to merge two sorted lists, a and b?", "A":"a.extend(b)\nc = sorted(a)." },
+    { "T": "python", "S": "dict", "Q": "How to get wordfrequency of text and initionalize a dict?", "A":"d = {}\nfor w in text.split():\n    d[w] = d.get(w,0) + 1." },
+    { "T": "python", "S": "general", "Q": "What is __init__.py?", "A":"It is used to import a module in a directory, which is called package import.\nIf we have a module, dir1/dir2/mod.py, we put __init__.py in each directories so that we can import the mod like this:\nimport dir1.dir2.mod\nThe __init__.py is usually an empty py file. The hierarchy gives us a convenient way of organizing the files in a large system." },
+    { "T": "python", "S": "string", "Q": "Build a string with the numbers from 0 to 100, 012345...?", "A":"''.join([`x` for x in xrange(101)])." },
+    { "T": "python", "S": "files", "Q": "How to print the contents of a file?", "A":"try:\n    with open('filename','r') as f:\n        print f.read()\nexcept IOError:\n    print 'No such file exists'." },
+    { "T": "python", "S": "os", "Q": "How can we get home directory using '~'?", "A":"import os\nprint os.path.expanduser('~')." },
+    { "T": "python", "S": "lists", "Q": "How to reverse a list in place?", "A":"s[::-1]." },
+    { "T": "python", "S": "!", "Q": "?", "A":"." }
+]}
+

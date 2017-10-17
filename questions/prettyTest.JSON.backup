@@ -1,0 +1,7 @@
+{"questions": [
+    { "T": "python", "S": "listcomprehension", "Q": "How to list all the files in a directory?", "A":" [f[2] for f in os.walk(directory) if len(f[2] > 0)]" },
+    { "T": "python", "S": "lists", "Q": "How to concatenate two lists in Python?", "A":"from itertools import chain\nc = list(itertools.chain(a,b))" }, 
+    { "T": "python", "S": "dictionary", "Q": "How to sort a Python dict by value", "A":"sorted(myDic.items(), key=lambda x: x[1])\nor\nimport operator\nsorted(xs.items(), key=operator.itemgetter(1))" }, 
+    { "T": "python", "S": "!", "Q": "?", "A":"." }
+]}
+
